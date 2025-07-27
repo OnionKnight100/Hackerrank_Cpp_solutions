@@ -5,7 +5,9 @@ void update(int *a,int *b) {
     // Complete this function   
     int temp = *a;
     *a = *a + *b;
-    // *b = std::abs(temp - *b); 
+    
+    // *b = std::abs(temp - *b); // using builtin function
+
     *b = temp - *b;
     *b = *b < 0 ? *b *(-1) : *b;  
 }
